@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas Académicas</title>
+    <link rel="stylesheet" href="css/notas.css" />
+  </head>
+  <body>
+    <h1>Notas Académicas</h1>
+    <div class="container">
+      <div class="student-info">
+        <div>
+          <p id="student-code">Codigo:</p>
+          <p id="student-name">Nombre:</p>
+        </div>
+        <button id="logout-btn" class="logout-btn">
+          Cerrar Sesión
+        </button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Asignatura</th>
+            <th>Créditos</th>
+            <th>P1</th>
+            <th>P2</th>
+            <th>P3</th>
+            <th>EF</th>
+            <th>Definitiva</th>
+          </tr>
+        </thead>
+        <tbody id="grades-table"></tbody>
+      </table>
+
+      <p>Promedio Ponderado: <span id="weighted-average"></span></p>
+    </div>
+    <script src="js/notas.js"></script>
+  </body>
+</html>
